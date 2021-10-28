@@ -46,7 +46,7 @@ namespace VendorManagement.Controllers
         [ProducesResponseType(typeof(VendorReadDto), 201)]
         [ProducesResponseType(400)]
         [HttpPut]
-        public ActionResult CreateVendor(VendorCreateDto vendor)
+        public ActionResult<VendorReadDto> CreateVendor(VendorCreateDto vendor)
         {
             Console.WriteLine($"Creating vendor {vendor.Name}");
             var newVendor = _mapper.Map<Vendor>(vendor);
