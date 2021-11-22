@@ -13,6 +13,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8S", "K8S", "{96C911DF-DEC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsService", "ProductsService\ProductsService.csproj", "{CA3728D2-8761-4134-A806-3F663D8F31C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE613485-96BD-4018-8226-7D33E12543C6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{2B99DE4D-49B0-4EB7-9F13-E29BC1E4A713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,10 @@ Global
 		{CA3728D2-8761-4134-A806-3F663D8F31C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA3728D2-8761-4134-A806-3F663D8F31C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA3728D2-8761-4134-A806-3F663D8F31C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B99DE4D-49B0-4EB7-9F13-E29BC1E4A713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B99DE4D-49B0-4EB7-9F13-E29BC1E4A713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B99DE4D-49B0-4EB7-9F13-E29BC1E4A713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B99DE4D-49B0-4EB7-9F13-E29BC1E4A713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

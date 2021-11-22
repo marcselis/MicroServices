@@ -8,11 +8,14 @@ namespace ProductManagement.Profiles
   {
     public ProductsProfile()
     {
-      CreateMap<Product, ProductReadDto>();
+      CreateMap<Product, ProductReadDto>()
+        .ForMember(p => p.LifeCycle, opt => opt.MapFrom(p => p.Lifecycle.Current));
       CreateMap<Product, ProductDetailsReadDto>();
-      CreateMap<ProductVersion, ProductVersionReadDto>();
+      CreateMap<ProductVersion, ProductVersionReadDto>()
+        .ForMember(pv => pv.LifeCycle, opt => opt.MapFrom(pv => pv.Lifecycle.Current));
       CreateMap<ProductCreateDto, Product>();
       CreateMap<ProductVersionCreateDto, ProductVersion>();
+      CreateMap<LifeCycleInfo, LifeCycleInfoDto>();
     }
   }
 }
