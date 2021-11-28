@@ -2,6 +2,7 @@
 
 namespace ProductsService.Dtos
 {
+
   public class ProductCreateDto
   {
     public int Id { get; set; }

@@ -56,6 +56,49 @@ namespace ProductsService.Data
                 Lifecycle = new LifeCycleInfo { Active = new DateOnly(2018, 10, 2), PhaseOut = new DateOnly(2024, 1, 9), EndOfLife=new DateOnly(2029,1,9) }
               }
             }
+          },
+          new Product
+          {
+            Name = "NServiceBus",
+            VendorId = 3,
+            Lifecycle = new LifeCycleInfo { Active = new DateOnly(2011, 7, 18) },
+            Versions = {
+              new ProductVersion
+              {
+                Version="6.5",
+                Lifecycle=new LifeCycleInfo{Active=new DateOnly(2018,8,30), PhaseOut=new DateOnly(2020,5,29), EndOfLife=new DateOnly(2022,5,29)}
+              },
+              new ProductVersion
+              {
+                Version="7.0",
+                Lifecycle=new LifeCycleInfo{Active=new DateOnly(2018,5,29), EndOfLife=new DateOnly(2019,2,28)}
+              },
+              new ProductVersion
+              {
+                Version="7.1",
+                Lifecycle=new LifeCycleInfo{Active=new DateOnly(2018,8,30), EndOfLife=new DateOnly(2020,4,23)}
+              },
+              new ProductVersion
+              {
+                Version="7.2",
+                Lifecycle=new LifeCycleInfo{Active=new DateOnly(2019,10,23), EndOfLife=new DateOnly(2020,11,8)}
+              },
+              new ProductVersion
+              {
+                Version="7.3",
+                Lifecycle=new LifeCycleInfo{Active=new DateOnly(2020,5,8), EndOfLife=new DateOnly(2021,2,14)}
+              },
+              new ProductVersion
+              {
+                Version="7.4",
+                Lifecycle=new LifeCycleInfo{Active=new DateOnly(2020,8,14), EndOfLife=new DateOnly(2022,1,14)}
+              },
+              new ProductVersion
+              {
+                Version="7.5",
+                Lifecycle=new LifeCycleInfo{Active=new DateOnly(2021,7,15) }
+              },
+              }
           }
         );
       context.SaveChanges();

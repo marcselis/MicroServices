@@ -7,6 +7,7 @@ namespace Tools
   public class NullableDateOnlyConverter : JsonConverter<DateOnly?>
   {
     private const string _nullString = null;
+
     public override DateOnly? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
       var value = reader.GetString();

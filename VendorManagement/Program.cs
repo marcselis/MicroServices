@@ -4,7 +4,7 @@ using VendorManagement.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseInMemoryDatabase("VendorMgmt"));
+builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseInMemoryDatabase("Vendors"));
 builder.Services.AddScoped<IVendorRepo,VendorRepo>();
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

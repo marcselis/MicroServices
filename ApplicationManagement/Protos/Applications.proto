@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "ApplicationManagement";
+
+package application;
+
+service Applications {
+  rpc GetApplication (ApplicationRequest) returns(GrpcApplicationModel);
+}
+
+message ApplicationRequest { 
+  int64 applicationId=1;
+}
+
+message GrpcApplicationModel{
+  int64 id=1;
+  string name=2;
+  string description=3;
+}

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ProductsService.Models
 {
+
   public class Product
   {
     [Key]
@@ -14,4 +15,5 @@ namespace ProductsService.Models
     public LifeCycleInfo Lifecycle { get; set; } = new LifeCycleInfo();
     public ICollection<ProductVersion> Versions { get; set; } = new Collection<ProductVersion>();
   }
+
 }
